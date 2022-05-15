@@ -15,9 +15,11 @@ export function BoardList({columns, data, colspan}) {
                                 <thead>
                                     <tr>
                                         {
-                                            columns.map((column) => (<th key={column}>
-                                                <h3>{column}</h3>
-                                            </th>))
+                                            columns.map((column) => (
+                                                <th key={column}>
+                                                    <h3>{column}</h3>
+                                                </th>
+                                            ))
                                         }
                                     </tr>
                                 </thead>
@@ -28,17 +30,15 @@ export function BoardList({columns, data, colspan}) {
                                                     <td colSpan={colspan}>데이터가 없습니다.</td>
                                                 </tr>
                                             : data.map((boards) => (
-                                          
-                                                <tr key={boards.name}> 
+                                                <tr key={boards.name}>
                                                     <td >{boards.title}</td>
                                                     <td >{boards.name}</td>
                                                     <td >{boards.email}</td>
-                                                    <td >{boards.subject}</td>
+                                                    <td >{boards.content}</td>
                                                 </tr>
                                             ))
                                     }
                                 </tbody>
-                            
                             </table>
                         </form>
                     </div>
@@ -46,5 +46,5 @@ export function BoardList({columns, data, colspan}) {
             </div>
         </section>
     );
-    
+
 }

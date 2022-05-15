@@ -5,7 +5,7 @@ import { AddBoard } from '@/components';
 
 const AddBoardPage = () => {
     const [inputs, setInputs] =useState({
-        title:'', name:'', email:'', subject:''
+        title:'', name:'', email:'', content:''
     })
     const dispatch = useDispatch()
 
@@ -22,7 +22,6 @@ const AddBoardPage = () => {
     const onClick = e =>{
       e.preventDefault()
       window.location.href = "/"
-
   }
 
   return (

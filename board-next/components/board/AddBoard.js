@@ -10,34 +10,34 @@ export function AddBoard({onChange, onSubmit, onClick}) {
                     <div className={styles.right}>
                         <form className={styles.form_container} onSubmit={onSubmit}>
                             <h1 >게시글 작성</h1>
-                            <input
+                            <input className={styles.input}
                                 type="text"
                                 placeholder="Title *"
                                 name="title"
-                                onChange={onChange}
                                 required="required"
-                                className={styles.input}/>
-                            <input
+                                onChange={onChange}
+                                />
+                            <input className={styles.input}
                                 type="text"
                                 placeholder="Name *"
                                 name="name"
-                                onChange={onChange}
                                 required="required"
-                                className={styles.input}/>
-                            <input
+                                onChange={onChange}
+                                />
+                            <input className={styles.input}
                                 type="text"
                                 placeholder="Email *"
                                 name="email"
-                                onChange={onChange}
                                 required="required"
-                                className={styles.input}/>
-                            <input
+                                onChange={onChange}
+                                />
+                            <input className={styles.input2}
                                 type="text"
-                                placeholder="Subject *"
-                                name="subject"
-                                onChange={onChange}
+                                placeholder="Content *"
+                                name="content"
                                 required="required"
-                                className={styles.input2}/>
+                                onChange={onChange}
+                                />
                             <div>
                                 <button className={styles.green_btn} onClick={onClick}>
                                     취소

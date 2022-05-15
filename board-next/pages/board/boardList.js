@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export default function BoardListPage() {
     const [data, setData] = useState([])
-    const columns = ['title', 'name', 'email', 'subject'];
+    const columns = ['title', 'name', 'email', 'content'];
     const SERVER = 'http://127.0.0.1:5000'
     
     useEffect(() => {

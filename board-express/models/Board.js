@@ -3,7 +3,7 @@ export default function BoardModel(mongoose) {
             title: String,
             name: String,
             email: String,
-            subject: String,
+            content: String,
         }, {timestamps: true})
         return mongoose.model('Board', boardSchema)
     }
