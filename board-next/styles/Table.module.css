@@ -1,0 +1,18 @@
+.body { background: rgb(255, 255, 255); }
+.blueone {
+  border-collapse: collapse;
+}  
+.blueone th {
+  padding: 30px;
+  color: #427c72;
+  border-bottom: 2px solid #427c72;
+  text-align: left;
+}
+.blueone td {
+  color: #ddd;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.blueone tr:hover td {
+  color: #427c72;
+}
