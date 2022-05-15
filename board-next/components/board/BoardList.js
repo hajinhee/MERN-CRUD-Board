@@ -35,11 +35,10 @@ export function BoardList({columns, data, colspan}) {
                                                     <td >{boards.email}</td>
                                                     <td >{boards.subject}</td>
                                                 </tr>
-                                              
-
                                             ))
                                     }
                                 </tbody>
+                            
                             </table>
                         </form>
                     </div>

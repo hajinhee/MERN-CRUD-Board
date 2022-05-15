@@ -8,7 +8,6 @@ export default function BoardListPage() {
     const columns = ['title', 'name', 'email', 'subject'];
     const SERVER = 'http://127.0.0.1:5000'
     
-
     useEffect(() => {
         axios
             .get(`${SERVER}/board/boardList`)
@@ -19,7 +18,7 @@ export default function BoardListPage() {
                 if (err.code === "ERR_NETWORK") {}
                 console.log(err)
             })
-        }, []);
+        }, []);    
     return (
         <BoardList columns={columns} colspan={4} data={data}/> 
     )

@@ -19,8 +19,14 @@ const AddBoardPage = () => {
         alert('게시글 내용: '+JSON.stringify(inputs))
         dispatch(addRequest(inputs))
     }
+    const onClick = e =>{
+      e.preventDefault()
+      window.location.href = "/"
+
+  }
+
   return (
-    <AddBoard onChange={onChange} onSubmit={onSubmit}  />
+    <AddBoard onChange={onChange} onSubmit={onSubmit} onClick={onClick} />
   );
 };
 

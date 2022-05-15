@@ -20,11 +20,7 @@ export default function BoardService() {
                 }
             })
         },
-        // deleteBoard() {
-        //     req.deleteBoard();
-        //     res.json({success: true, message: `게시글 삭제`});
-
-        // },
+    
         getBoards(_req, res){
             Board.find()
             .exec((err, boards)=>{
